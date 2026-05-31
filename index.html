@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Workshop on Responsibly Training Foundation Models @ CSCW2025</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand"><span class="fw-bolder text-primary">Responsible Data Series @ CSCW2025</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#cfp">Call for Participation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://github.com/Responsible-Data-Workshop/resources" target="_blank" rel="noopener noreferrer">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </main>
+
+        <!-- Header -->
+        <header class="py-5 bg-white" style="background-image: url('assets/background.jpg'); background-size: cover; background-position: center;">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-12">
+                        <div class="text-center">
+                            <div class="badge bg-dark text-white mb-4"><div class="text-uppercase">CSCW 2025 Workshop</div></div>
+                            <h1 class="display-5 fw-bolder mb-3"><span class="text-white d-inline">Responsibly Training Foundation Models: Actualizing Ethical Principles for Curating Large-Scale Training Datasets in the Era of Massive AI Models</span></h1>
+                            <div class="fs-3 fw-light text-muted mb-5">October 18th, 2025, 9am-6pm</div>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-3">
+                                <a class="btn btn-dark btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="proposal.pdf" target="_blank">Workshop Proposal</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Trying out header with video background...
+        <header class="py-5 bg-white position-relative">
+            <video autoplay muted loop playsinline class="video-background">
+                <source src="assets/workshop-day/video-1.75.mp4" type="video/mp4">
+            </video>
+            <div class="container px-5 position-relative" style="z-index: 2;">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-12">
+                        <div class="text-center text-white">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                <div class="text-uppercase">CSCW 2025 Workshop</div>
+                            </div>
+                            <h1 class="display-5 fw-bolder mb-3"><span class="text-gradient d-inline">TBU</span></h1>
+                            <div class="fs-3 fw-light text-white mb-5">Date TBU</div>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-3">
+                                <a class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="" target="_blank">Workshop Proposal (TBU)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> -->
+
+
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-12 col-xl-12 col-xxl-12">
+                    <!-- Overview Section-->
+                    <section id="overview">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Overview</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-lg-12">
+                                        <div>
+                                            AI technologies have become ubiquitous, influencing domains from healthcare to finance and permeating our daily lives.
+                                            Concerns about the values underlying the creation and use of datasets to develop AI technologies are growing.
+                                            Current dataset practices often disregard critical ethical issues, despite the fact that data represents and impacts real people.
+                                            While progress has been made in establishing best practices for curating smaller datasets in a more ethical fashion, the unprecedented
+                                            scale of training data in the era foundation models presents unique hurdles for which AI researchers and practitioners must now face.
+                                            <br/><br/>
+                                            This <strong>one-day, hybrid</strong> workshop aims to unite interdisciplinary researchers and practitioners in an effort to identify
+                                            the challenges unique to curating datasets for large-scale foundation models---and then begin to ideate best practices for tackling those challenges.
+                                            Drawing from CSCW's tradition of interdisciplinary exchange, our aim is to cultivate a diverse community of researchers and practitioners interested in defining the future of ethical responsibility
+                                            in the <i>composition</i>, <i>process</i>, and <i>release</i> of large-scale datasets for foundation model training.
+                                            <br/><br/>
+                                            <ul>
+                                                    <li><i>Composition</i>: The makeup of the dataset itself, including the data schema, data instances, and annotations.</li>
+                                                    <li><i>Process</i>: The process that goes into curating the dataset, such as collecting data and annotating it.</li>
+                                                    <li><i>Release</i>: The release of the dataset to be used by others for evaluation and modeling purposes.</li>
+                                            </ul>
+                                            We plan to disseminate the outcomes of this workshop to the HCI community and beyond by developing a conceptual framework of both the challenges
+                                            and potential solutions associated specifically with curating datasets for foundation models.
+                                            <br/><br/>
+                                            This workshop is part of a series we are running. Upcoming events in this series include our <a href="https://responsible-data-workshop.github.io/la2025/" target="_blank" rel="noopener">Los Angeles workshop</a> from September 15-16.   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Key Info Section-->
+                    <section id="key-info">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Key Information</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-lg-12">
+                                        <div>
+                                            <ul>
+                                                Link to conference website: <a href="https://cscw.acm.org/2025/" target="_blank">https://cscw.acm.org/2025/</a>
+                                                <br><br>
+                                                <li><strong>Submission Deadline:</strong> September 5, 2025</li>
+                                                <li><strong>Notification of acceptance:</strong> September 15, 2025</li>
+                                                <li><strong>Workshop date:</strong> October 18th, 2025</li>
+                                                <li><strong>Workshop location:</strong> In Person</li>
+                                                <li><strong>Contact:</strong> <a href="mailto:morgan.scheuerman@sony.com">morgan.scheuerman@sony.com</a></li>
+                                            </ul>
+                                            <!-- <strong>TBU</strong> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="themes">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Themes</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-lg-12">
+                                        <div>
+                                            Themes of interest related to this workshop include, but are not limited to the following:
+                                            <ul>
+                                                <li>Considerations for responsible data curation across different dataset use cases (e.g., pre-training vs. post-training) and with different data types (e.g., identifying vs. non-identifying, copyrighted vs. fair use)</li>
+                                                <li>Discussion on the cultural, technical, social, legal, and environmental factors that impact dataset curation</li>
+                                                <li>Practices and conditions to ensure ethical labor standards in data collection and annotation</li>
+                                                <li>Tools, processes, and policies to support more responsible large-scale training dataset curation</li>
+                                                <li>Participation and community-centered approaches for large-scale dataset curation</li>
+                                                <li>Consent, attribution, revocation, and the "right to be forgotten" in datasets</li>
+                                            </ul>
+                                            <!-- <strong>TBU</strong> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- CFP Section-->
+                    <section id="cfp">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Call for Participation</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-lg-12">
+                                        <div>
+                                            <p>We invite 25-30 individuals interested in exploring design's role in transforming complex challenges into constructive opportunities to participate in our <strong>one-day, hybrid</strong> workshop. Submissions are welcomed in several forms:</p>
+                                            <ul>
+                                                <li>
+                                                    <p><strong>Position papers</strong> or drafts (<strong>1-2 pages</strong>, ACM single-column format, excluding references). Alternative formats such as design fiction are also encouraged.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>"Encore" submissions</strong> of previously published conference or journal papers relevant to the workshop themes.</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Initial research ideas</strong> submitted as extended abstracts (<strong>1-2 pages</strong>, ACM single-column format, excluding references).</p>
+                                                </li>
+                                                <li>
+                                                    <p><strong>Expression of interest</strong> (<strong>2-4 paragraphs</strong>) describing what you hope to gain from the workshop and how it might connect to your current or future work.</p>
+                                                </li>
+                                            </ul>
+                                            <p>We ask all attendees to provide an accessible PDF of their submission.</p>
+                                            <p>The selection of participants will involve a <em><strong>light</strong></em> review process by the organizers, who will evaluate submissions based on their relevance to the workshop's theme, overall quality, and the diversity of perspectives they bring.</p>
+                                        </div>
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScGYwa2Lfu9k2bLRao-XsCIP73Iz2PH_Nzym9RHjLzUBQDeZA/viewform?usp=header" class="btn btn-outline-dark px-2 py-3"  target="_blank">
+                                            <div class="d-inline-block bi"></div>
+                                            Submit &rarr;
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Agenda Section-->
+                    <section id="agenda">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Workshop Agenda</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-lg-12">
+                                        <table class="mx-auto">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">Time</th>
+                                                    <th>Activity and Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>9:00-9:30am</td>
+                                                    <td><strong>Welcome and Opening Remarks</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9:30-10:30am</td>
+                                                    <td><strong>Participant Lightning Talks</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10:30-11:00am</td>
+                                                    <td><strong>Coffee Break</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:00am-12:00pm</td>
+                                                    <td><strong>Group Session # 1: Ethical Principles for Dataset Curation</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12:00-1:30pm</td>
+                                                    <td><strong>Lunch Break</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1:30-2:30pm</td>
+                                                    <td><strong>Group Session #2: Challenges to Ethical Dataset Curation</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2:30-2:45pm</td>
+                                                    <td><strong>Coffee Break</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2:45-3:45pm</td>
+                                                    <td><strong>Group Session #3: Opportunities for Ethical Dataset Curation</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3:45-4:00pm</td>
+                                                    <td><strong>Coffee Break </strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4:00-4:45pm</td>
+                                                    <td><strong>Group Session #4: Framework Writing</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4:45-5:45pm</td>
+                                                    <td><strong>Group Share</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5:45-6:00pm</td>
+                                                    <td><strong>Closing Remarks</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><strong>(Optional) Post-Workshop Dinner</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="submissions">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Accepted Work</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col-lg-12">
+                                    <div class="text-primary fw-bold pt-5 px-5 h5">
+                                        POSITION PAPERS
+                                    </div>
+                                    <div class="px-5">
+                                        <ul>
+                                            <li> <span class="fw-bold">On Durable Data Usage Policies across AI Model Supply Chain</span> - Rui Zhao, Teresa Huang, Moming Duan, Jun Zhao [<a href="submissions/8_durable.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                            <li><span class="fw-bold">Redefining Value: Wikipedia’s Role in Dataset Governance for Foundation Models</span> - Yaxuan Yin [<a href="submissions/9_redefining.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                            <li><span class="fw-bold">Making Structural Labor Visible: A Protocol for Attribution in Modular AI Systems</span> - Muyang Li [<a href="submissions/10_making.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                            <li><span class="fw-bold">The Conversational Context Problem: Why Speech Datasets Violate Consent by Design</span> - Anna Seo Gyeong Choi [<a href="submissions/11_conversational.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-primary fw-bold pt-3 px-5 h5">
+                                        ENCORE SUBMISSIONS
+                                    </div>
+                                    <div class="px-5">
+                                        <ul>
+                                            <li><span class="fw-bold">WeAudit: Scaffolding User Auditors and AI Practitioners in Auditing Generative AI</span> - Wesley Hanwen Deng, Wang Claire, Howard Ziyu Han, Jason I. Hong, Kenneth Holstein, Motahhare Eslami [<a href="submissions/6_weaudit.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                            <li><span class="fw-bold">Un-Straightening Generative AI: How Queer Artists Surface and Challenge Model Normativity</span> - Jordan Taylor, Joel Mire, Franchesca Spektor, Alicia DeVrio, Maarten Sap, Haiyi Zhu, Sarah E. Fox [<a href="submissions/7_un-straightening.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-primary fw-bold pt-3 px-5 h5">
+                                        EXPRESSIONS OF INTEREST
+                                    </div>
+                                    <div class="px-5 pb-5">
+                                        <ul>
+                                                <li><span class="fw-bold">Thinking through human-honeybee relations, honey production, and large-scale AI systems: a paradigm shift for AI training and development?</span> - Rebekah Cupitt [<a href="submissions/1_honeybee.pdf" target="_blank" rel="noopener">Link</a>]</li>
+                                                <li><span class="fw-bold">Expression of Interest</span> - Luis Galárraga [<a href="submissions/2_eoi.pdf" target="_blank" rel="noopener">Link</a>]</li>    
+                                                <li><span class="fw-bold">Expression of Interest</span> - Silvia Cazacu [<a href="submissions/3_eoi.pdf" target="_blank" rel="noopener">Link</a>]</li>    
+                                                <li><span class="fw-bold">Expression of Interest</span> - Ayesha Parveen [<a href="submissions/4_eoi.pdf" target="_blank" rel="noopener">Link</a>]</li>  
+                                                <li><span class="fw-bold">Expression of Interest</span> - Aimen Gaba [<a href="submissions/5_eoi.pdf" target="_blank" rel="noopener">Link</a>]</li>    
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Organizers Section-->
+                    <section id="organizers">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <h2 class="text-primary fw-bolder mb-0">Organizers</h2>
+                        </div>
+                        <div class="card shadow border-0 rounded-4 mb-5">
+                            <div class="card-body p-5">
+                                <div class="row">
+                                    <!-- Morgan -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/morgans.jpg" alt="Morgan Klaus Scheuerman" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://www.morgan-klaus.com/" class="text-decoration-none" target="_blank">Morgan Klaus Scheuerman</a></h5>
+                                        <p class="text-muted">Sony AI</p>
+                                    </div>
+                                    
+                                    <!-- Dora -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/doraz.jpg" alt="Dora Zhao" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://dorazhao99.github.io/" class="text-decoration-none" target="_blank">Dora Zhao</a></h5>
+                                        <p class="text-muted">Stanford University</p>
+                                    </div>
+                                    
+                                    <!-- Lindsay -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/jeronea.png" alt="Jerone T. A. Andrews" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://ai.sony/people/Jerone-Andrews/" class="text-decoration-none" target="_blank">Jerone T. A. Andrews</a></h5>
+                                        <p class="text-muted">Sony AI</p>
+                                    </div>
+                                    
+                                    <!-- Abeba -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/abebab.jpg" alt="Abeba Birhane" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://abebabirhane.com/" class="text-decoration-none" target="_blank">Abeba Birhane</a></h5>
+                                        <p class="text-muted">Trinity College Dublin</p>
+                                    </div>
+                                    
+                                    <!-- Vera -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/vera.jpg" alt="Q. Vera Liao" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://qveraliao.com/" class="text-decoration-none" target="_blank">Q. Vera Liao</a></h5>
+                                        <p class="text-muted">University of Michigan, Ann Arbor</p>
+                                    </div>
+                                    
+                                    <!-- Georgia -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/georgia.png" alt="Georgia Panagiotidou" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <!-- <img src="assets/blank.jpg" alt="Georgia Panagiotidou" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;"> -->
+                                        <h5><a href="https://www.kcl.ac.uk/people/georgia-panagiotidou" class="text-decoration-none" target="_blank">Georgia Panagiotidou</a></h5>
+                                        <p class="text-muted">King's College London</p>
+                                    </div>
+                                    
+                                    <!-- Pooja -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/pooja.jpeg" alt="Pooja Chitre" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <!-- <img src="assets/blank.jpg" alt="Pooja Chitre" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;"> -->
+                                        <h5><a href="https://www.linkedin.com/in/pchitre/" class="text-decoration-none" target="_blank">Pooja Chitre</a></h5>
+                                        <p class="text-muted">Arizona State University</p>
+                                    </div>
+                                    
+                                    <!-- Kathleen Pine -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/katiepine.jpeg" alt="Kathleen H. Pine" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://www.kpine.net/" class="text-decoration-none" target="_blank">Kathleen H. Pine</a></h5>
+                                        <p class="text-muted">Arizona State University</p>
+                                    </div>
+                                    
+                                    <!-- Shawn -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/shawnw.jpg" alt="Shawn Walker" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://shawnw.io/" class="text-decoration-none" target="_blank">Shawn Walker</a></h5>
+                                        <p class="text-muted">Arizona State University</p>
+                                    </div>
+                                    
+                                    <!-- Jieyu -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/jyzhao.jpg" alt="Jieyu Zhao" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://jyzhao.net/" class="text-decoration-none" target="_blank">Jieyu Zhao</a></h5>
+                                        <p class="text-muted">University of Southern California</p>
+                                    </div>
+                                    
+                                    <!-- Alice -->
+                                    <div class="col-md-4 text-center">
+                                        <img src="assets/alicex.jpg" alt="Alice Xiang" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                        <h5><a href="https://ai.sony/people/Alice-Xiang/" class="text-decoration-none" target="_blank">Alice Xiang</a></h5>
+                                        <p class="text-muted">Sony AI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="scrollToTop" title="Go to top">&uarr;</button>
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Responsible Data 2025</div></div>
+                    <div class="col-auto"><div class="small m-0">Website Template from <a href="https://github.com/positech-cscw-2025/positech-cscw-2025.github.io/tree/main" target="_blank">Positech</a></div></div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const links = [
+                { linkSelector: 'a[href="#cfp"]', sectionId: 'cfp' },
+                { linkSelector: 'a[href="#agenda"]', sectionId: 'agenda' },
+                { linkSelector: 'a[href="#organizers"]', sectionId: 'organizers' }
+            ];
+
+            function addLinkClickListener(linkSelector, sectionId) {
+                const link = document.querySelector(linkSelector);
+                const section = document.getElementById(sectionId);
+                
+                if (link && section) {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        section.scrollIntoView({ behavior: 'instant' });
+                    });
+                }
+            }
+
+            links.forEach(({ linkSelector, sectionId }) => addLinkClickListener(linkSelector, sectionId));
+        });
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTop").style.display = "block";
+            } else {
+                document.getElementById("scrollToTop").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // Safari
+            document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+        }
+        </script>        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
